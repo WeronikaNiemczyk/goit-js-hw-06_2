@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .image {
-    width: auto;
-    height: 300px;
-
+  width: 600px;
+  height: 300px;
+  margin: 30px;
 }
