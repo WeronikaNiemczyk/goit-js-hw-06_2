@@ -6,10 +6,11 @@ loginForm.addEventListener("submit", (event) => {
     elements: { email, password },
   } = event.target;
 
-  if (email.value === "" || password.value === "") {
+  if (email.value.trim() === "" || password.value.trim() === "") {
     return alert("Wszystkie pola powinny zostać uzupełnione!");
   } else {
-    console.log(`E-mail: ${email.value}, Password: ${password.value}`);
+    const obj = { email: email.value, password: password.value };
+    console.log(obj);
   }
   event.target.reset();
 });
